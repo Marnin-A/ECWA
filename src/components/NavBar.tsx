@@ -14,7 +14,7 @@ export default function NavBar() {
 			name: "Donate",
 			link: "donate",
 			styles:
-				"bg-primary-blue px-4 py-2 rounded-lg hover:bg-primary-dark-blue text-white",
+				"px-4 py-2 rounded-lg bg-transparent border border-primary-blue text-primary-blue",
 		},
 	];
 	return (
@@ -27,7 +27,7 @@ export default function NavBar() {
 					alt={"Evangelical Church Winning All logo"}
 				/>
 			</Link>
-			<div className="flex items-center gap-10 ml-auto max-[920px]:gap-5 max-mlg:hidden">
+			<div className="flex items-center gap-10 max-[920px]:gap-5 max-mlg:hidden">
 				{" "}
 				<AnimatedBackground
 					defaultValue={Tabs[0].name}

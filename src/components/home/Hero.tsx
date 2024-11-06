@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import { BorderTrail } from "../motion-primitives/BorderTrail";
 
 export default function Hero() {
 	return (
@@ -20,8 +21,8 @@ export default function Hero() {
 
 			{/* Content */}
 			<div className="relative flex h-full flex-col items-center justify-center px-4 text-center">
-				<div className="max-w-5xl space-y-8">
-					<h1 className="font-serif text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+				<div className="font-dela_gothic  max-w-5xl space-y-8">
+					<h1 className="tracking-wider text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
 						Welcome to the One Big United Happy Family
 					</h1>
 					<p className="mx-auto max-w-3xl text-lg text-gray-200 sm:text-xl">
@@ -30,19 +31,16 @@ export default function Hero() {
 					</p>
 					<div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
 						<Button
-							asChild
 							size="lg"
-							className="bg-white text-gray-900 hover:bg-gray-100"
+							className="relative w-max bg-primary-blue text-base tracking-widest text-white font-light hover:bg-primary-dark-blue"
 						>
-							<Link href="/visit">Plan Your Visit</Link>
-						</Button>
-						<Button
-							asChild
-							size="lg"
-							variant="outline"
-							className="border-white text-white hover:bg-white/10"
-						>
-							<Link href="/watch">Watch Online</Link>
+							<Link className="w-full h-full py-2 m-2" href="/visit">
+								Join us for Service
+							</Link>
+							<BorderTrail
+								className="bg-gradient-to-l from-blue-200 via-blue-500 to-blue-200 dark:from-blue-400 dark:via-blue-500 dark:to-blue-700"
+								size={50}
+							/>
 						</Button>
 					</div>
 				</div>

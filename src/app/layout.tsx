@@ -18,10 +18,14 @@ const roboto = localFont({
 		{ path: "./fonts/Roboto-Thin.ttf", style: "normal", weight: "100" },
 		{ path: "./fonts/Roboto-ThinItalic.ttf", style: "italic", weight: "100" },
 	],
-	variable: "--font-roboto-sans",
+	variable: "--font-roboto",
 	weight: "100 300 400 500 700 800 900",
 });
-
+const dela_gothic = localFont({
+	src: "./fonts/DelaGothicOne-Regular.ttf",
+	variable: "--font-dela-gothic",
+	weight: "400",
+});
 export const metadata: Metadata = {
 	title: "Evangelical Church Winning All- Kaduna",
 	description:
@@ -35,7 +39,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${roboto.variable} antialiased relative`}>
+			<body
+				className={`${roboto.className} ${dela_gothic.variable} antialiased relative`}
+			>
 				<NavBar />
 				{children}
 			</body>
