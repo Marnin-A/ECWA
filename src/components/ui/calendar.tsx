@@ -3,7 +3,6 @@
 import * as React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { DayPicker } from "react-day-picker";
-
 import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -19,7 +18,6 @@ const Calendar = React.forwardRef(
 				<DayPicker
 					showOutsideDays={showOutsideDays}
 					className={cn("p-3", className)}
-					onDayClick={(e) => console.log(e.toLocaleDateString())}
 					classNames={{
 						months:
 							"relative flex flex-col sm:flex-row space-y-4 sm:space-x-11 sm:space-y-0 pl-0 w-max",
@@ -49,7 +47,8 @@ const Calendar = React.forwardRef(
 						day_range_end: "day-range-end",
 						day_selected:
 							"bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground focus:bg-primary focus:text-primary-foreground",
-						day_today: "bg-accent text-accent-foreground",
+						day_today: "bg-black text-accent-foreground",
+						today: "bg-black text-white",
 						day_outside:
 							"day-outside text-muted-foreground opacity-50 aria-selected:bg-accent/50 aria-selected:text-muted-foreground aria-selected:opacity-30",
 						day_disabled: "text-muted-foreground opacity-50",

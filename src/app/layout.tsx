@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import NavBar from "@/components/NavBar";
 import "./globals.css";
+import Provider from "@/components/providers/QueryClientProvider";
+import { Toaster } from "@/components/ui/toaster";
 
 const roboto = localFont({
 	src: [
@@ -42,8 +44,11 @@ export default function RootLayout({
 			<body
 				className={`${roboto.className} ${dela_gothic.variable} antialiased relative`}
 			>
-				<NavBar />
-				{children}
+				<Provider>
+					<NavBar />
+					{children}
+					<Toaster />
+				</Provider>
 			</body>
 		</html>
 	);
