@@ -1,5 +1,5 @@
-import Events from "@/components/home/Events";
-import Hero from "@/components/home/Hero";
+import Events from "@/components/home/events/Events";
+import Hero from "@/components/home/hero/Hero";
 import Image from "next/image";
 
 export default function Home() {

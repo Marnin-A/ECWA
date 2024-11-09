@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Calendar } from "../ui/calendar";
+import { Calendar } from "../../ui/calendar";
 import { TailSpin } from "react-loading-icons";
 import useEventQuery from "@/lib/queries/calendar-queries";
 import ErrorCard from "./ErrorCard";
@@ -24,7 +24,10 @@ export default function Events() {
 	console.log("DATA", data, "ERROR", error);
 
 	return (
-		<section className="w-full h-[70dvh] grid grid-cols-2 items-center">
+		<section
+			className="w-full h-[70dvh] grid grid-cols-2 items-center"
+			id="events"
+		>
 			<div>
 				<Calendar
 					mode="single"
