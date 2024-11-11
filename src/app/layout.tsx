@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import "./globals.css";
 import Provider from "@/components/providers/QueryClientProvider";
 import { Toaster } from "@/components/ui/toaster";
+import Footer from "@/components/Footer";
 
 const roboto = localFont({
 	src: [
@@ -48,6 +49,7 @@ export default function RootLayout({
 					<NavBar />
 					{children}
 					<Toaster />
+					<Footer />
 				</Provider>
 			</body>
 		</html>

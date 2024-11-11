@@ -23,7 +23,7 @@ export default function Hero() {
 			<div className="relative flex h-full flex-col items-center justify-center px-4 text-center">
 				<div className="font-dela_gothic  max-w-5xl space-y-8">
 					<h1 className="tracking-wider text-4xl font-bold text-white sm:text-5xl md:text-6xl lg:text-7xl">
-						Welcome to the One Big United Happy Family
+						Welcome to the One Big Happy United Family
 					</h1>
 					<p className="mx-auto max-w-3xl text-lg text-gray-200 sm:text-xl">
 						Join us in building a community of faith, love, and fellowship where

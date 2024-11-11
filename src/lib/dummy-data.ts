@@ -15,14 +15,15 @@ export const events: EventDetails[] = [
 	},
 ];
 
-type WeeklyEventDetails = {
+type WeeklyActivityDetails = {
 	day: string;
 	activity: string;
 	time: string;
+	icon: string;
 };
-export const weeklyEvents: WeeklyEventDetails[] = [
-	{ day: "Tuesday", activity: "Bible Study", time: "7:00pm" },
-	{ day: "Wednesday", activity: "Prayer meeting", time: ": 6:00pm" },
-	{ day: "Friday", activity: "Youth Fellowship", time: "7:00pm" },
-	{ day: "Saturday", activity: "Band Practice", time: "2:00pm" },
+export const weeklyActivities: WeeklyActivityDetails[] = [
+	{ day: "Tuesday", activity: "Bible Study", time: "7:00pm", icon: "" },
+	{ day: "Wednesday", activity: "Prayer meeting", time: ": 6:00pm", icon: "" },
+	{ day: "Friday", activity: "Youth Fellowship", time: "7:00pm", icon: "" },
+	{ day: "Saturday", activity: "Band Practice", time: "2:00pm", icon: "" },
 ];
