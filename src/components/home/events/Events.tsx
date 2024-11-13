@@ -25,7 +25,7 @@ export default function Events() {
 	console.log("DATA", data, "ERROR", error);
 
 	return (
-		<section className="w-full" id="events">
+		<section className="w-full pt-10 pb-20" id="events">
 			<h2 className="px-4 text-4xl font-dela_gothic my-6 mx-auto w-max">
 				Events
 			</h2>

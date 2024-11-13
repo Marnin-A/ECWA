@@ -17,9 +17,9 @@ export default function ChurchLeadership() {
 		],
 	};
 	return (
-		<div className="flex items-center flex-col justify-center relative font-dela_gothic tracking-wide">
-			<div className="flex pl-10 gap-10 w-full h-full">
-				<div className="flex flex-col items-center justify-start gap-14 pt-20 w-1/3">
+		<div className="flex items-center flex-col justify-center relative font-dela_gothic border tracking-wide">
+			<div className="flex w-full h-full">
+				<div className="flex flex-col items-center justify-start bg-gray-300 gap-14 px-10 pt-20 w-1/3">
 					<h2 className="font-bold text-primary-dark-blue text-4xl">Clergy</h2>
 					<div className="flex items-center justify-center gap-10">
 						<LeaderCard

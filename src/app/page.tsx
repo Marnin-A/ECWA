@@ -1,3 +1,4 @@
+import ChurchGroups from "@/components/home/church-groups/ChurchGroups";
 import ChurchLeadership from "@/components/home/church-leadership/ChurchLeadership";
 import Events from "@/components/home/events/Events";
 import Hero from "@/components/home/hero/Hero";
@@ -10,6 +11,7 @@ export default function Home() {
 			<SundayRecap />
 			<ChurchLeadership />
 			<Events />
+			<ChurchGroups />
 		</main>
 	);
 }
